@@ -1,0 +1,17 @@
+nav {
+  &.horizontal {
+    ul {
+        li {
+            font-weight:bold;
+        }
+    }
+  } 
+
+  &.vertical {
+      ul {
+          li {
+              color: red;
+          }
+      }
+  }
+}

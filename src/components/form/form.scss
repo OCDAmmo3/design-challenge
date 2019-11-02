@@ -1,0 +1,22 @@
+@import '../../design/variables';
+
+form {
+  input, select {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid $accentColor;
+    margin-left: $space * .7;
+    margin-right: $space * .7;
+    padding: $space * .2;
+  }
+  label, legend {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  legend {
+    font-size: 1.05rem;
+  }
+  label {
+    font-size: .8rem;
+  }
+}

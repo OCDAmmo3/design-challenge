@@ -13,7 +13,11 @@ Nav.defaultProps = {
     <ul>
       <li>Item 1</li>
       <li>Item 2</li>
-      <li>Item 3</li>
+      <ul>Item 3
+        <li>Nested 1</li>
+        <li>Nested 2</li>
+        <li>Nested 3</li>
+      </ul>
     </ul>,
   ],
 };

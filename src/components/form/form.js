@@ -84,7 +84,6 @@ const Form = props => {
           <input type="color" />
         </label>
       </fieldset>
-      button color date month password search url week
       <fieldset>
         <legend>Range</legend>
         <label>

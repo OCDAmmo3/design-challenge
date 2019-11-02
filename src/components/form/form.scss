@@ -1,13 +1,20 @@
 @import '../../design/variables';
 
 form {
-  input, select {
+  input, select, textarea, button {
     background-color: white;
     border-radius: 5px;
     border: 1px solid $accentColor;
     margin-left: $space * .7;
     margin-right: $space * .7;
     padding: $space * .2;
+  }
+  input:hover, select:hover, textarea:hover, button:hover {
+    background-color: $accentColor;
+    color: rgb(230, 230, 230);
+  }
+  input:hover::placeholder, textarea:hover::placeholder, select:hover::placeholder, button:hover::placeholder {
+    color: rgb(230, 230, 230);
   }
   label, legend {
     margin: 0;
@@ -18,5 +25,11 @@ form {
   }
   label {
     font-size: .8rem;
+  }
+  fieldset {
+    border: 1px solid $accentColor;
+    margin: $space;
+    padding: $space * .6;
+    border-radius: $space;
   }
 }

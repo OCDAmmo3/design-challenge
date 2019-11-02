@@ -80,4 +80,54 @@ nav {
             }
         }
     }
+    &.hamburger {
+        ul {
+            display: none;
+        }
+        background-color: $rootColor;
+        border: 1px solid $accentColor;
+        border-radius: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    &.hamburger:hover {
+        ul, li {
+            display: block;
+            margin: $space * .5;
+        }
+        ul {
+            li, ul {
+                border: 1px solid $accentColor;
+                border-radius: 5px;
+                padding: $space * .5;
+                background-color: rgb(230, 230, 230);
+            }
+            li:hover {
+                background-color: $accentColor;
+                color: rgb(230, 230, 230);
+            }
+            ul {
+                li {
+                    display: none;
+                    border: 1px solid $accentColor;
+                    border-radius: 5px;
+                    padding: $space * .5;
+                    background-color: rgb(230, 230, 230);
+                }
+                li:hover {
+                    background-color: $accentColor;
+                    color: rgb(230, 230, 230);
+                }
+            }
+            ul:hover {
+                li {
+                    display: block;
+                }
+            }
+        }
+        padding: $space;
+        display: block;
+        width: 150px;
+        height: auto;
+    }
 }

@@ -89,3 +89,44 @@ section.row {
     }
   }
 }
+
+section.column {
+  * {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  div {
+    header {
+      padding: $space * .8;
+      background-color: grey;
+      color: rgb(220, 220, 220);
+      font-size: 1.4rem;
+    }
+    div {
+      padding: $space * .8;
+      background-color: $rootColor;
+      max-width: 100%;
+    }
+    footer {
+      padding: $space * .8;
+      background-color: rgb(190, 190, 190);
+      border-top: 1px solid darkGrey;
+    }
+    width: 100%;
+  }
+  div:nth-of-type(odd) {
+    div {
+      background-color: $tableHead;
+    }
+    footer {
+      background-color: rgb(210, 210, 210);
+      border-top: 1px solid grey;
+    }
+  }
+  div:nth-of-type(even) {
+    header {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+  }
+}

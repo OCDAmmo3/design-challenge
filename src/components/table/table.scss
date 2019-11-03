@@ -1,3 +1,5 @@
+@import '../../design/variables';
+
 table {
   thead {
     th {
@@ -41,4 +43,49 @@ table {
     border-right: 1px solid $tableHead;
   }
   width: 100%;
+}
+
+section.row {
+  div {
+    header {
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: $tableHead;
+      padding: $space * .8;
+      border-bottom: 1px solid $accentColor;
+    }
+    div {
+      padding: $space * .8;
+      background-color: $rootColor;
+      border-left: 1px solid black;
+    }
+    div:last-of-type {
+      border-right: 1px solid black;
+    }
+    footer {
+      padding: $space * .8;
+      background-color: $tableHead;
+    }
+  }
+  div:nth-of-type(odd) {
+    div {
+      background-color: lightsteelblue;
+    }
+  }
+  div:nth-of-type(even) {
+    div {
+      background-color: lightpink;
+    }
+    header {
+      background-color: $accentColor;
+    }
+    footer {
+      background-color: $accentColor;
+    }
+  }
+  div:last-of-type {
+    header {
+      border: none;
+    }
+  }
 }

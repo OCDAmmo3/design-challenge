@@ -1,0 +1,132 @@
+@import '../../design/variables';
+
+table {
+  thead {
+    th {
+      padding: $space * .6;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+    }
+    th:last-of-type {
+      border-right: none;
+    }
+    background-color: $tableHead;
+  }
+  tbody {
+    td {
+      padding: $space * .6;
+      text-align: center;
+      border-left: 1px solid $tableHead;
+      border-right: 1px solid $tableHead;
+    }
+    td:hover {
+      transition: .3s ease-in-out;
+      background-color: $tableHead;
+      color: white;
+    }
+    box-sizing: border-box;
+    background-color: $rootColor;
+  }
+  tfoot {
+    th {
+      padding: $space * .3;
+      border-top: 1px solid $tableHead;
+      border-right: 1px solid $tableHead;
+    }
+    th:last-of-type {
+      border-right: none;
+    }
+    background-color: rgb(200, 200, 200);
+  }
+  tbody, thead, tfoot {
+    border-left: 1px solid $tableHead;
+    border-right: 1px solid $tableHead;
+  }
+  width: 100%;
+}
+
+section.row {
+  div {
+    header {
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: $tableHead;
+      padding: $space * .8;
+      border-bottom: 1px solid $accentColor;
+    }
+    div {
+      padding: $space * .8;
+      background-color: $rootColor;
+      border-left: 1px solid black;
+    }
+    div:last-of-type {
+      border-right: 1px solid black;
+    }
+    footer {
+      padding: $space * .8;
+      background-color: $tableHead;
+    }
+  }
+  div:nth-of-type(odd) {
+    div {
+      background-color: lightsteelblue;
+    }
+  }
+  div:nth-of-type(even) {
+    div {
+      background-color: lightpink;
+    }
+    header {
+      background-color: $accentColor;
+    }
+    footer {
+      background-color: $accentColor;
+    }
+  }
+  div:last-of-type {
+    header {
+      border: none;
+    }
+  }
+}
+
+section.column {
+  * {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  div {
+    header {
+      padding: $space * .8;
+      background-color: grey;
+      color: rgb(220, 220, 220);
+      font-size: 1.4rem;
+    }
+    div {
+      padding: $space * .8;
+      background-color: $rootColor;
+      max-width: 100%;
+    }
+    footer {
+      padding: $space * .8;
+      background-color: rgb(190, 190, 190);
+      border-top: 1px solid darkGrey;
+    }
+    width: 100%;
+  }
+  div:nth-of-type(odd) {
+    div {
+      background-color: $tableHead;
+    }
+    footer {
+      background-color: rgb(210, 210, 210);
+      border-top: 1px solid grey;
+    }
+  }
+  div:nth-of-type(even) {
+    header {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../design/variables';
+
+#root, body, html, main, aside {
+  padding: 0;
+  margin: -20px;
+  height: 100%;
+}
+
+.sideBar {
+  text-align: center;
+  .navBar {
+    display: none;
+  }
+  h3 {
+    padding: $space;
+  }
+  font-size: 3rem;
+  background-color: $rootColor;
+  width: 25%;
+}
+
+.sideBar:hover {
+  .navBar {
+    li {
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      padding: $space;
+      font-size: 1.5rem;
+    }
+    li:hover {
+      a {
+        color: blue;
+      }
+      background-color: $tableHead;
+    }
+    height: 100%;
+    display: block;
+  }
+  height: 100%;
+  color: rgb(60,60,60);
+  min-height: 100%;
+}

@@ -1,0 +1,22 @@
+@import '../../design/variables';
+
+.sideBar {
+  .navBar {
+    display: none;
+  }
+  h3 {
+    padding: $space;
+  }
+  font-size: 3rem;
+  background-color: $rootColor;
+}
+
+.sideBar:hover {
+  .navBar {
+    display: block;
+    li {
+      padding: $space;
+      font-size: 1.5rem;
+    }
+  }
+}

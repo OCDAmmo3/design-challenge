@@ -15,10 +15,9 @@ Drawer.defaultProps = {
       <h3>Stuff</h3>
       <nav>
         <ul className="navBar">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
+          <li><a href="http://localhost:3000/forms">Forms Page</a></li>
+          <li><a href="http://localhost:3000/list">List Page</a></li>
+          <li><a href="http://localhost:3000/nav/horizontal">Horizontal Nav Page</a></li>
         </ul>
       </nav>
     </div>

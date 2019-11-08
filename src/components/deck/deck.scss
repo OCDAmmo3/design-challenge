@@ -15,12 +15,21 @@ main {
       border: solid black 1px;
     }
     display: grid;
-    grid-template-columns: 20% 60% 20%;
   }
   .columns-1 {
     * {
       grid-column: 2;
     }
+    grid-template-columns: 20% 60% 20%;
+  }
+  .columns-2 {
+    .card:nth-of-type(odd) {
+      grid-column: 3;
+    }
+    .card:nth-of-type(even) {
+      grid-column: 5;
+    }
+    grid-template-columns: 5% 10% 32.5% 5% 32.5% 10% 5%;
   }
   height: 100%;
 }

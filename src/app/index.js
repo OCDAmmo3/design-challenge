@@ -81,11 +81,6 @@ const menuItems = [
         link: '/card/media-right',
         render: props => <Card {...props} type="media-right" />,
       },
-      {
-        name: 'Clickable',
-        link: '/card/clickable',
-        render: props => <Card {...props} type="clickable" />,
-      },
     ],
   },
   {

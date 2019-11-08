@@ -32,7 +32,7 @@ Card.defaultProps = {
   content: {
     title: 'Card Title',
     media: {
-      src: 'http://placehold.it/200x200',
+      src: 'https://www.psdstack.com/wp-content/uploads/2016/10/featured-copyright-free-mages.jpg',
       title: 'An Image',
     },
     copy: 'Some interesting content here',
